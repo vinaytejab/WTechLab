@@ -1,5 +1,69 @@
 <html>
 	<body>
 		<h2 style="font-size:300%;font-family:verdana;text-align: center; padding-top: 20px;padding-bottom: 20px; background-color: lightblue;"><i> Welcome to XYZ's Online Book Shop Registration Page</i></h2>
+
+		<div style="background-color: #BEEC67 ;">
+		<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		<center>	
+			<!-- insert_data.jsp to store the details in the database is to be made-->
+				<form name="register" action="insert_data.jsp" method = "post" onsubmit="return validation()" target="_self">
+					<table style="margin-top: 10px; margin-left: 90px;" cellpadding="7">
+						<tr>
+							<td><font face="calibri" size=5 color="#000001"><b>Name : <b></font></td>
+							<td><input type="text" name="name" style="font-size: 13pt; height: 33px; width: 210px;" placeholder=" Enter your name"></td>
+						</tr>
+						<tr>
+							<td><font face="calibri" size=5 color="#000001"><b>Date of birth : </b></font></td>
+							<td><input type="date" name="dob" style="font-size: 13pt; height: 33px; width: 210px;" placeholder=" YYYY-MM-DD"></td>
+						</tr>
+						<tr>
+							<td><font face="calibri" size=5 color="#000001"><b>You are : </b></font></td>
+							<td><input type="radio" name="role" id="r1" value="Student">
+								<font face="calibri" size=4 color="#000001"><b>Student</b></font> &emsp;
+								<input type="radio" name="role" id="r2" value="Working">
+								<font face="calibri" size=4 color="#000001"><b>Working</b></font>
+							</td>
+						</tr>
+						<tr>
+							<td><font face="calibri" size=5 color="#000001"><b>Gender : </b></font></td>
+							<td><input type="radio" name="gender" id="g1" value="M"><font face="calibri" size=4 color="#000001"><b>Male</b></font> 
+								&emsp;&emsp;&emsp;
+								<input type="radio" name="gender" id="g2" value="F"><font face="calibri" size=4 color="#000001"><b>Female</b></font>
+							</td>
+						</tr>
+						<tr>
+							<td><font face="calibri" size=5 color="#000001">
+							<b>Phone number : </b></font></td>
+							<td><input type="text" name="ph_no" style="font-size: 13pt; height: 33px; width: 210px;" placeholder=" Enter phone number"></td>
+						</tr>
+						<tr>
+							<td><font face="calibri" size=5 color="#000001"><b>Email : </b></font></td>
+							<td><input type="email" name="email" style="font-size: 13pt; height: 33px; width: 210px;" placeholder=" Enter email id"></td>
+						</tr>
+						<tr>
+							<td><font face="calibri" size=5 color="#000001"><b>Username : </b></font></td>
+							<td><input type="text" name="username" style="font-size: 13pt; height: 33px; width: 210px;" placeholder=" Enter Username"></td>
+						</tr>
+						<tr>
+							<td><font face="calibri" size=5 color="#000001"><b>Password : </b></font></td>
+							<td><input type="password" name="pswd" style="font-size: 13pt; height: 33px; width: 210px;" placeholder=" Enter Password"></td>
+						</tr>
+						<tr>
+							<td><font face="calibri" size=5 color="#000001"><b>Re-enter Password : </b></font></td>
+							<td><input type="password" name="re_pswd" style="font-size: 13pt; height: 33px; width: 210px;" placeholder=" Re-enter Password"></td>
+						</tr>
+					</table>
+					<br>
+					<button type="submit" style="background-color: sienna; width: 180px; height: 50px">
+						<font face="calibri" size=6 color="white"> Register </font>
+					</button>
+					<br><br>
+					<a href="login.html" target="_self"><font face="calibri" size=5 color="sienna">Login Instead!</font></a>
+				</form>
+			</center>
+		</div>
+
 	</body>
 </html>
+
+

@@ -1,4 +1,9 @@
 <html>
+<script type = "text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+</script>
 <body>
 	<table width="100%" style="font-size:140%;font-family:verdana;text-align: center; padding-top: 20px;padding-bottom: 10px;">
 		<tr>
@@ -7,7 +12,7 @@
 		<td> <a href="past.html" target="f32">Past-Orders</a></td>
 <!-- 		<td> <a href="catalogue.html" target="f32">Catalogue</a></td> -->
 		<td> <a href="cart.html" target="f32">Cart </a></td>
-		<td> <a href="login.html" target="f32">Logout</a></td>
+		<td> <a href="login.html" target="_top">Logout</a></td>
 		 </tr>
 	 </table>
  </body>
